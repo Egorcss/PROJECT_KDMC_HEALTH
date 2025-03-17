@@ -1,0 +1,19 @@
+.introduction_title {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    animation: change-color 3s linear infinite alternate;
+}
+
+@keyframes change-color {
+    0% {
+        color: rgb(216, 253, 6);
+    }
+    50% {
+        color: rgb(194, 12, 179);
+    }
+    100% {
+        color: deepskyblue;
+    }
+}
