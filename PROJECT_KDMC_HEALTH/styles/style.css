@@ -1,19 +1,200 @@
-.introduction_title {
-    font-size: 3em;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    animation: change-color 3s linear infinite alternate;
+.body {
+    max-width: 1440px;
+    margin: auto;
 }
 
-@keyframes change-color {
-    0% {
-        color: rgb(216, 253, 6);
-    }
-    50% {
-        color: rgb(194, 12, 179);
-    }
-    100% {
-        color: deepskyblue;
-    }
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+/* ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ */
+.header_up-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #FBF6F3;
+}
+
+/* Блок слева */
+.pay_and_metro-location {
+    display: flex;
+    column-gap: 30px;
+}
+
+.metro_icon_and_location {
+    display: flex;
+    column-gap: 10px;
+}
+
+.metro_icon_and_location > img {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+/* Блок по центру */
+.phone_contacts {
+    display: flex;
+    column-gap: 30px;
+}
+
+.phone_contacts > div {
+    display: flex;
+    column-gap: 10px;
+}
+
+.phone_contacts > div > img {
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+/* Блок справа */
+.header_up-navigation_right {
+    display: flex;
+    column-gap: 35px;
+}
+
+/* НИЖНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ */
+.header_bottom-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header_up-navigation_center {
+    display: flex;
+    column-gap: 6em;
+}
+
+.searcher-lopp {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* СЕКЦИЯ МЭИН */
+
+/* Блоки с информацией о нас */
+
+/* 1 блок про наши контакты, где находимся и т.п. */
+.informaion_about_us {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 60px;
+}
+
+.informaion_about_us_contacts {
+    display: flex;
+    column-gap: 30px;
+}
+
+.informaion_about_us_contacts > div {
+    width: 305px;
+    max-height: 300px;
+    padding: 20px;
+    background-color: #FBF6F3;
+}
+
+.informaion_about_us_contacts > div h2 {
+    color: #F16321;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+/* 2 блок про то, почему мы лучшие */
+.informaion_about_us_why_we_better {
+    display: grid;
+    grid-template-columns: 645px 645px;
+    column-gap: 30px;
+    row-gap: 60px;
+}
+
+.informaion_about_us_why_we_better > div {
+    padding: 30px;
+    background-color: #D6ECEF33;
+}
+
+.informaion_about_us_why_we_better > h2 {
+    color: #354A45;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    grid-column: 1/3;
+}
+
+.informaion_about_us_why_we_better > div > h3 {
+    color: #0AB6C6;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+
+.informaion_about_us_why_we_better > div > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+
+
+/* ФУТЕР */
+.footer {
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 30px;
+    outline: 1px solid red;
+    padding: 30px;
+    background-color: #FBF6F3;
+}
+
+.footer h2 {
+    color: #F16321;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0%;
+}
+
+.footer > div > p {
+    color: #354A45;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0%;    
+}
+
+.footer > p {
+    color: #F16321;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
 }
