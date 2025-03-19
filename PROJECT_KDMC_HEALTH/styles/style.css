@@ -3,12 +3,6 @@
     margin: auto;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
 p {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -17,12 +11,24 @@ p {
     letter-spacing: 0%;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
 /* ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ */
-.header_up-navigation ul {
+.header_up-navigation {
+    background-color: #FBF6F3;
+
+}
+
+.header_up-navigation_ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    background-color: #FBF6F3;
+    margin-right: 60px;
 }
 
 /* Блок слева */
@@ -76,17 +82,32 @@ p {
 
 .header_up-navigation_center {
     display: flex;
-    column-gap: 6em;
+    column-gap: clamp(1.25rem, -5rem + 12.5vw, 6.25rem);
 }
 
 .searcher-lopp {
     display: flex;
     align-items: center;
+    margin-right: 60px;
 }
 
 
 
 /* СЕКЦИЯ МЭИН */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Огромное изображение со свайпами */
+.large_image_under_header {
+    width: 100%;
+}
+
+.large_image_under_header > img {
+    width: 100%;
+    height: 100%;
+}
 
 /* Блоки с информацией о нас */
 
@@ -99,7 +120,9 @@ p {
 
 .informaion_about_us_contacts {
     display: flex;
+    max-width: 1440px;
     column-gap: 30px;
+    row-gap: 30px;
 }
 
 .informaion_about_us_contacts > div {
@@ -113,7 +136,7 @@ p {
     color: #F16321;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 25px;
     letter-spacing: 0%;
 }
@@ -121,9 +144,10 @@ p {
 /* 2 блок про то, почему мы лучшие */
 .informaion_about_us_why_we_better {
     display: grid;
-    grid-template-columns: 645px 645px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     row-gap: 60px;
+    margin-top: 80px;
 }
 
 .informaion_about_us_why_we_better > div {
@@ -162,17 +186,16 @@ p {
 
 /* ФУТЕР */
 .footer {
-    max-width: 1350px;
+    min-height: 165px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-inline: 30px;
+    margin: 40px 60px;
     outline: 1px solid red;
     padding: 30px;
     background-color: #FBF6F3;
 }
 
-.footer h2 {
+.footer .footer_title {
     color: #F16321;
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -182,19 +205,13 @@ p {
 }
 
 .footer > div > p {
-    color: #354A45;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0%;    
+    color: #354A45;   
 }
 
-.footer > p {
+.footer .see_reviews {
     color: #F16321;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0%;
+    background-color: #F1632133;
+    padding: 10px 12px;
+    border-radius: 20px;
+    align-self: center;
 }
